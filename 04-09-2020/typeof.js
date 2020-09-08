@@ -1,0 +1,7 @@
+console.log("type of 1 is,", typeof(1))
+console.log("type of 1.1 is,", typeof(1.1))
+console.log("type of '1.1' is,", typeof('1.1'))
+console.log("type of true is,", typeof(true))
+console.log("type of null is,", typeof(null))
+console.log("type of undefined is,", typeof(undefined))
+console.log("type of [] is,", typeof([]))
