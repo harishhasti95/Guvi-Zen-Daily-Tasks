@@ -19,7 +19,7 @@ function div(a,b){
   return a/b;
 }
 
-let aa = [add,sub,mul,div];
+let arr = [add,sub,mul,div];
 
-something(0,aa); // 120
-something(2,aa); // 2000
+something(0,arr); // 120
+something(2,arr); // 2000
