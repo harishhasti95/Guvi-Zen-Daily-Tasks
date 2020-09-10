@@ -8,5 +8,5 @@ request.send();
 
 request.onload = function() {
 var data = JSON.parse(this.response);
-data.forEach((singleData) => console.log(singleData.name +", "+singleData.capital +", "+singleData.flag))
+data.forEach((a) => console.log(a.name +", "+a.capital +", "+a.flag))
 }
