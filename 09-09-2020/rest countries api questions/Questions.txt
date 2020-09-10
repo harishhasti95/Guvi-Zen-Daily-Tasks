@@ -1,0 +1,7 @@
+
+Rest countries:
+1. Get the countries in asia - filter 
+2. Get the countries with population less than 2L - fliter
+3. print follwoig details  name , capital , flag  - foreach,filter
+4. Print the total population of the countries  - reduce
+5. Print the total population of the countries in asia - filter & reduce
