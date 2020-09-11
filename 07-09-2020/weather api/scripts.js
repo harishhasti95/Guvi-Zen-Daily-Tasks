@@ -1,6 +1,6 @@
 // Create a request variable and assign a new XMLHttpRequest object to it.
 var request = new XMLHttpRequest()
-var url_string = 'api.openweathermap.org/data/2.5/weather?q=London&appid=<ur api key from open weather website>';
+var url_string = 'api.openweathermap.org/data/2.5/weather?q=London&appid='fd8810318dc516a8198ef150d232eb96';
 var proxy = "https://cors-anywhere.herokuapp.com/"
 var url_string2 = proxy + url_string;
 // Open a new connection, using the GET request on the URL endpoint
