@@ -370,37 +370,56 @@
       </tr>
 
   </table>
-  <div>For Paperless PAN Application: &nbsp;Yes&nbsp;&nbsp;<input type=radio>&nbsp;&nbsp;&nbsp;No&nbsp;&nbsp;<input type=radio></div>
-  <table> 
-      <tr>
-          <td>DSC <form>
-            <label for="fo2"></label>
-            <select name="fo2" id="fo2"><option value="Minor">Minor</option>
-            <option value="Self">Self</option></select></form><u>Guidelines for DSC user</u>
-          </td>
-      </tr>
-      
-  </table>
-  <br>
-  <br>
-  <table>
-      <tr>
-          <td>Upload Photo<br>Upload Document</td>
-          <td><input type="file"><br><input type="file"></td>
-      </tr>
-  </table>
+  <footer>
+    <table id="tablefooter" style="background-color:lightyellow;">
+        <tr colspan="3">
+            <td>For paperless PAN Application:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <input type="radio" name="offline">
+                <label>Yes</label>
+                <input type="radio" name="offline">
+                <label>No</label>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="radio">&emsp;&emsp;
+                DSC&emsp; <select style="width:10%;">
+                    <option>--Select</option>
+                </select>&emsp;&emsp;
+                <span style="text-decoration:underline">Guidelines for DSC user</span>
+            </td>
+        </tr>
+        <tr>
+            <td>Upload photo</td>
+            <td><input type="file" name="" id=""></td>
+            <td>Upload Signature<input type="file" name="" id=""></td>
+        </tr>
+        <tr>
+            <td>Upload document</td>
+            <td><input type="file" name="" id=""></td>
+        </tr>
+        <tr>
 
-
-  <br>
-  <br>
-  <div>ALREADY UPLOADED PHOTO:         <input type="text"></div>
-  <br>
-  <div>ALREADY UPLOADED SIGNATURE:      <input type="text"></div>
-  <br>
-  <div>ALREADY UPLOADED DOCUMENTS:      <input type="text" style="height: 400%;"></div>
-  <br>
-
-  <div id='but'><button>Submit</button></div>
+        </tr>
+        <tr>
+            <td>ALREADY UPLOADED PHOTO:</td>
+            <td><input type="text" name="" id=""></td>
+        </tr>
+        <tr>
+            <td>ALREADY UPLOADED SIGNATURE:</td>
+            <td><input type="text" name="" id=""></td>
+        </tr>
+        <tr>
+            <td>ALREADY UPLOADED DOCUMENTS:</td>
+            <td><textarea rows="4" cols="50">
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="submit"></td>
+        </tr>
+    </table>
+  </footer>
 
   <br>
   <br>
