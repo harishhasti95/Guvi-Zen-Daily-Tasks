@@ -1,0 +1,80 @@
+.curs {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+}
+.overall{
+    width: auto;
+    height: 100%;
+    border: 10px solid cyan;
+    padding: -30px;
+    background-color: black;
+    font-size: 20px;
+}
+.top{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    font-weight: bold;
+    font-size: x-large;
+    padding-top: 40px;
+    
+}
+.one{
+    background-color: lightpink;
+    height: max-content;
+}
+.two{
+    background-color: black;
+    color:white;
+    height: max-content;
+}
+.three{
+    background-color: pink;
+    height: max-content;
+
+}
+.four{
+    background-color: lightcoral;
+    height: max-content;
+}
+.five{
+    background-color: black;
+    height: max-content;
+    color:rgb(27, 216, 105);
+}
+.six{
+    background-color: cyan;
+    height: max-content;
+}
+.seven{
+    background-color: blueviolet;
+    background-blend-mode: color;
+    height: max-content;
+
+}
+.bottom{
+    background-color: gray;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    width:100%;
+    height: max-content;
+}
+div{
+    height:400px;
+}
+.section{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    transform: skewY(3deg);
+    font-family: 'Solway', serif;
+    font-weight: bolder;
+}
+.other{
+    transform: skewY(-3deg);
+}
