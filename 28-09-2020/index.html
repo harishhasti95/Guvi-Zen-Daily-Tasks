@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container" id='first'>
+        <button type="button" class="btn btn-primary col-12" onclick="add_items()">Add new item</button>
+    </div>
+    <script>
+        var json = {}; k=-1; arr=[], dict={};
+        function add_items(){
+            var form = document.createElement('form');
+            var di = document.createElement('div');
+            di.setAttribute('class','form-group');
+            di.setAttribute('id','main');
+            var l1 = document.createElement('label');
+            l1.setAttribute('for','productname');
+            l1.innerHTML = 'Enter the product name';
+            var i1 = document.createElement('input');
+            i1.setAttribute('type','text');
+            i1.setAttribute('class','form-control');
+            i1.setAttribute('name','productname');
+            i1.setAttribute('id','productname');
+            var l2 = document.createElement('label');
+            l2.setAttribute('for','productCategory');
+            l2.innerHTML = 'Enter the product Category';
+            var i2 = document.createElement('input');
+            i2.setAttribute('type','text');
+            i2.setAttribute('class','form-control');
+            i2.setAttribute('name','productCategory');
+            i2.setAttribute('id','productCategory');
+            var l3 = document.createElement('label');
+            l3.setAttribute('for','product Variants');
+            l3.innerHTML = 'Enter the number of variants you want to add';
+            var i3 = document.createElement('input');
+            i3.setAttribute('type','number');
+            i3.setAttribute('class','form-control');
+            i3.setAttribute('name','productVariants');
+            i3.setAttribute('id','productVariants');
+            var bu = document.createElement('button');
+            bu.setAttribute('type','button');
+            bu.setAttribute('class','btn btn-primary');
+            bu.setAttribute('onclick','add_variants()');
+            bu.innerHTML = 'Get Variants';
+            l1.appendChild(i1);l2.appendChild(i2);l3.appendChild(i3);
+            di.appendChild(l1);di.appendChild(document.createElement('br'));
+            di.appendChild(l2);di.appendChild(document.createElement('br'));
+            di.appendChild(l3);di.appendChild(document.createElement('br'));
+            di.appendChild(bu);
+            form.appendChild(di);
+
+            var new_div = document.createElement('div');
+            new_div.setAttribute('class','container')
+            new_div.setAttribute('id','new')
+            new_div.appendChild(form);
+            document.body.appendChild(new_div);
+
+        }
+        function add_json(){
+            dict['productname'] = document.getElementById('productname').value;
+            dict['productCategory'] = document.getElementById('productCategory').value;
+            dict['productVariants'] = document.getElementById('productVariants').value;
+            dict[values_label.value] = document.getElementById('values').value;
+            
+            json[k] = dict;
+            k+=1;
+            console.log(json);
+            arr=[],dict={};
+        }
+        
+        function add_variants(){
+            var iter = document.getElementById('productVariants').value;
+            
+
+            for(i=1;i<=iter;i++){
+
+                var form1 = document.createElement('form');
+                var div = document.createElement('div');
+                div.setAttribute('class','container form-group');
+                var values_label = document.createElement('input');
+                values_label.setAttribute('class','form-control col-4');
+                values_label.setAttribute('id','values_label');
+                values_label.innerHTML = 'Enter variant value type';
+
+                var values = document.createElement('input');
+                values.setAttribute('class','form-control col-4');
+                values.setAttribute('id','values'+i);
+                values.innerHTML = 'Enter variant values';
+
+                // var fdiv = document.createElement('div');
+                var fdiv_button = document.createElement('button');
+                fdiv_button.setAttribute('type','button');
+                fdiv_button.setAttribute('class','btn btn-primary col-4');
+                fdiv_button.setAttribute('onclick','add_json()');
+                fdiv_button.innerHTML = 'Submit for getting JSON';
+                // fdiv.appendChild(fdiv_button);
+                div.appendChild(document.createElement('br'));
+                div.appendChild(values_label);
+                div.appendChild(document.createElement('br'));
+                div.appendChild(values);
+                div.appendChild(document.createElement('br'));
+                div.appendChild(fdiv_button);
+
+                document.body.appendChild(div);
+
+            }
+
+        }
+    </script>
+    
+</body>
+</html>
