@@ -22,7 +22,7 @@ setTimeout(()=>{
                                     setTimeout(()=>{
                                         p.innerHTML = 1;
                                         setTimeout(()=>{
-                                            p.innerHTML = 'Dont wait more, call back task is finished'
+                                            p.innerHTML = 'Dont wait more, call back hell task is finished'
                                         },1000)
                                     },1000)
                                 },1000)
