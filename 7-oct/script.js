@@ -49,11 +49,11 @@ var petShop = /** @class */ (function () {
                     k.innerHTML = 'yes, available';
                     _this.available_pets[blah].shift();
                 }
-                else {
-                    var k = document.getElementById('is_it_there');
-                    k.innerHTML = 'Not available';
-                }
                 _this.printAvailability();
+            }
+            else {
+                var k = document.getElementById('is_it_there');
+                k.innerHTML = 'Not available';
             }
         };
     };

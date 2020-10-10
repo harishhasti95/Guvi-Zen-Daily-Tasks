@@ -49,11 +49,11 @@ class petShop{
                     let k = document.getElementById('is_it_there');
                     k.innerHTML = 'yes, available';
                     this.available_pets[blah].shift();
-                }else{
-                    let k = document.getElementById('is_it_there');
-                    k.innerHTML = 'Not available';
                 }
-                this.printAvailability()
+                this.printAvailability();
+            }else{
+                let k = document.getElementById('is_it_there');
+                k.innerHTML = 'Not available';
             }
         }
     } 
