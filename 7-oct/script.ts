@@ -7,9 +7,9 @@ class petShop{
     available_pets;
     constructor(pets){
         this.available_pets = pets;
+        this.printAvailability()
         
     }
-
     printAvailability(){
         let tab = document.getElementById('available');
         tab.innerHTML = '';
