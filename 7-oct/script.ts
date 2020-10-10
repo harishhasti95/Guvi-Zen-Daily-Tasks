@@ -36,20 +36,10 @@ class petShop{
     checkAvailability(): ()=> void{
         return () =>{
             let blah = (<HTMLSelectElement>document.getElementById('animal')).value;
-            let keys_a = Object.keys(this.available_pets);
-            let flag = false
-            for(let r=0;r<keys_a.length;r++){
-                if(blah==keys_a[r]){
-                    flag = true;
-                    console.log(flag);
-                }
-            }
-            if(flag){
-                if(this.available_pets[blah] != undefined){
-                    let k = document.getElementById('is_it_there');
-                    k.innerHTML = 'yes, available';
-                    this.available_pets[blah].shift();
-                }
+            if(blah in this.available_pets && this.available_pets[blah].length > 0){
+                let k = document.getElementById('is_it_there');
+                k.innerHTML = 'yes, available';
+                this.available_pets[blah].shift();
                 this.printAvailability();
             }else{
                 let k = document.getElementById('is_it_there');

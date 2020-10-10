@@ -35,20 +35,10 @@ var petShop = /** @class */ (function () {
         var _this = this;
         return function () {
             var blah = document.getElementById('animal').value;
-            var keys_a = Object.keys(_this.available_pets);
-            var flag = false;
-            for (var r = 0; r < keys_a.length; r++) {
-                if (blah == keys_a[r]) {
-                    flag = true;
-                    console.log(flag);
-                }
-            }
-            if (flag) {
-                if (_this.available_pets[blah] != undefined) {
-                    var k = document.getElementById('is_it_there');
-                    k.innerHTML = 'yes, available';
-                    _this.available_pets[blah].shift();
-                }
+            if (blah in _this.available_pets && _this.available_pets[blah].length > 0) {
+                var k = document.getElementById('is_it_there');
+                k.innerHTML = 'yes, available';
+                _this.available_pets[blah].shift();
                 _this.printAvailability();
             }
             else {
