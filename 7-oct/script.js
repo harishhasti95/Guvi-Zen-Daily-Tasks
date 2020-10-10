@@ -6,6 +6,7 @@ var available_pets = {
 var petShop = /** @class */ (function () {
     function petShop(pets) {
         this.available_pets = pets;
+        this.printAvailability();
     }
     petShop.prototype.printAvailability = function () {
         var tab = document.getElementById('available');
